@@ -1,4 +1,4 @@
-name: ✨ Suggestion
+name: ✨ Suggestion / Feature Request / New Blocks
 description: Didn't find what you were looking for? Suggest a feature or improvement.
 title: "[Suggestion]: "
 labels: ["suggestion"]
@@ -15,17 +15,17 @@ body:
     attributes:
       label: 📍 Page you came from
       description: This will auto-fill when coming from the website.
-      placeholder: e.g. /resources/fonts
+      placeholder: e.g. /blocks/section
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: looking_for
     attributes:
-      label: 🙋 What were you trying to find?
+      label: 🙋 What were you trying to find? (Optional)
       placeholder: Describe what you expected to see.
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: suggestion
