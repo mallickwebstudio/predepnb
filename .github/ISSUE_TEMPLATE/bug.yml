@@ -25,6 +25,8 @@ body:
     attributes:
       label: ✅ What did you expect to happen? (Optional)
       placeholder: Describe the expected behavior.
+    validations:
+      required: false
 
   - type: textarea
     id: actual
