@@ -1,0 +1,45 @@
+name: ✨ Suggestion
+description: Didn't find what you were looking for? Suggest a feature or improvement.
+title: "[Suggestion]: "
+labels: ["suggestion"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to help improve the project!  
+        Please fill out the details below.
+
+  - type: input
+    id: page
+    attributes:
+      label: 📍 Page you came from
+      description: This will auto-fill when coming from the website.
+      placeholder: e.g. /resources/fonts
+    validations:
+      required: false
+
+  - type: textarea
+    id: looking_for
+    attributes:
+      label: 🙋 What were you trying to find?
+      placeholder: Describe what you expected to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: 💡 Your suggestion
+      placeholder: Describe what improvement you’d like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: extras
+    attributes:
+      label: 📎 Optional extras
+      description: Screenshots, examples, links, or anything else.
+      placeholder: Add any helpful details.
+    validations:
+      required: false
